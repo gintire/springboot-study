@@ -12,6 +12,5 @@ public class SampleRunner implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("Foo_Runner : " + args.containsOption("foo"));
         System.out.println("Bar_Runner : " + args.containsOption("bar"));
-        System.out.println("bar = " + args.getOptionValues("bar").size());
     }
 }

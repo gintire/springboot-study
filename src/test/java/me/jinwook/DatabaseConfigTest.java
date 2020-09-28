@@ -10,7 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(properties = "application.yml")
+@SpringBootTest(properties = "test.yml")
 public class DatabaseConfigTest {
     // given
     @Autowired
