@@ -17,8 +17,9 @@ database:
   password: 123123
 jinwook:
   name: jinwook
-  age: ${random.int(30)}
+  age: ${random.int(0,100)}
   fullname: ${jinwook.name} Im
+  sessionTimeout: 25s
 
 ---
 spring:
