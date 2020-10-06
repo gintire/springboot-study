@@ -5,6 +5,9 @@ spring:
 ---
 spring:
   profiles: dev
+  output:
+    ansi:
+      enabled: always
 
 spring.main.allow-bean-definition-overriding: true
 holoman:
@@ -20,7 +23,12 @@ jinwook:
   age: ${random.int(0,100)}
   fullname: ${jinwook.name} Im
   sessionTimeout: 25s
-
+logging:
+  file:
+    path: /logs
+#  level:
+#    me:
+#      jinwook: debug
 ---
 spring:
   profiles: test
