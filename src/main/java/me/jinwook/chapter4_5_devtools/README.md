@@ -11,3 +11,8 @@
 >    * 글로벌 설정
 >    * ~/.spring-boot-devtools.properties
 * 리모트 애플리케이션
+
+**관련 링크**
+> spring boot devtools : https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html  
+> devtools github : https://github.com/spring-projects/spring-boot/blob/v1.5.16.RELEASE/spring-boot-devtools/src/main/java/org/springframework/boot/devtools/env/DevToolsPropertyDefaultsPostProcessor.java
+

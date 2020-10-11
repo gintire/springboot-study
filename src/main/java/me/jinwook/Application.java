@@ -11,7 +11,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 public class Application {
     public static void main(String[] args) {
         SpringApplication application = new SpringApplication(Application.class);
-        application.setWebApplicationType(WebApplicationType.NONE);
+        application.setWebApplicationType(WebApplicationType.SERVLET);
         //application.setBannerMode(Banner.Mode.OFF);
         application.addListeners(new SampleListener());
         application.run(args);
