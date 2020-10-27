@@ -1,3 +1,14 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  output:
+    ansi:
+      enabled: always
+
 spring.main.allow-bean-definition-overriding: true
 holoman:
   name: jinwook.im
@@ -7,3 +18,31 @@ database:
   ip: 172.21.50.61
   pid: HAODB12c
   password: 123123
+jinwook:
+  name: jinwook
+  age: ${random.int(0,100)}
+  fullname: ${jinwook.name} Im
+  sessionTimeout: 25s
+logging:
+  file:
+    path: /logs
+#  level:
+#    me:
+#      jinwook: debug
+---
+spring:
+  profiles: test
+
+spring.main.allow-bean-definition-overriding: true
+holoman:
+  name: jinwook.im
+  how-long: 80
+database:
+  id: rose
+  ip: 172.21.50.202
+  pid: DEVDB12c
+  password: 123123
+jinwook:
+  name: gintire
+  age: ${random.int(30)}
+  fullname: ${jinwook.name} Im

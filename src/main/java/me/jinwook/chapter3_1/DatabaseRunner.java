@@ -1,5 +1,6 @@
-package me.jinwook;
+package me.jinwook.chapter3_1;
 
+import me.jinwook.Database;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

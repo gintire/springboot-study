@@ -1,0 +1,12 @@
+spring.main.allow-bean-definition-overriding: true
+holoman:
+  name: jinwook.im
+  how-long: 80
+database:
+  id: rose
+  ip: 172.21.50.61
+  pid: HAODB12c
+  password: 123123
+jinwook:
+  name: gintire
+  age: ${random.int}
